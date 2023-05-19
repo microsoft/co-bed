@@ -72,7 +72,8 @@ The training loop is implemented in
 
 To run CO-BED:
 
-```python discrete_design_main.py \
+```
+python discrete_design_main.py \
     --seed-reps 3 \
     --batch-size 512 \
     --hidden-dim 512 \
@@ -91,7 +92,8 @@ To run CO-BED:
 
 To run random baseline, simply remove the `optimise-design` flag:
 
-```python discrete_design_main.py \
+```
+python discrete_design_main.py \
     --batch-size 512 \
     --hidden-dim 512 \
     --encoding-dim 16 \
@@ -108,7 +110,8 @@ To run random baseline, simply remove the `optimise-design` flag:
 
 To run UCB baseline, use `ucb-baseline` flag, setting to the appropriate level of $\alpha$, e.g. 0.0 (or $1.0$ or $2.0$):
 
-```python discrete_design_main.py \
+```
+python discrete_design_main.py \
     --batch-size 512 \
     --hidden-dim 512 \
     --encoding-dim 16 \
@@ -125,7 +128,8 @@ To run UCB baseline, use `ucb-baseline` flag, setting to the appropriate level o
 ```
 
 To run Thompson sampling baseling, use `thompson-sampling-baseline` flag:
-```python discrete_design_main.py \
+```
+python discrete_design_main.py \
     --batch-size 512 \
     --hidden-dim 512 \
     --encoding-dim 16 \
@@ -173,7 +177,8 @@ The training loop is implemented in
 
 To run CO-BED:
 
-```python continuous_design_main.py \
+```
+python continuous_design_main.py \
     --batch-size 512 \
     --hidden-dim 512 \
     --encoding-dim 16 \
@@ -190,7 +195,8 @@ To run CO-BED:
 
 To run random baseline, simply remove the `optimise-design` flag:
 
-```python continuous_design_main.py \
+```
+python continuous_design_main.py \
     --batch-size 512 \
     --hidden-dim 512 \
     --encoding-dim 16 \
@@ -206,7 +212,8 @@ To run random baseline, simply remove the `optimise-design` flag:
 
 To run UCB baseline, use `ucb-baseline` flag, setting to the appropriate level of $\alpha$, e.g. 0.0 (or $1.0$ or $2.0$):
 
-```python continuous_design_main.py \
+```
+python continuous_design_main.py \
     --batch-size 512 \
     --hidden-dim 512 \
     --encoding-dim 16 \
@@ -222,7 +229,8 @@ To run UCB baseline, use `ucb-baseline` flag, setting to the appropriate level o
 ```
 
 To run Thompson sampling baseling, use `thompson-sampling-baseline` flag:
-```python continuous_design_main.py \
+```
+python continuous_design_main.py \
     --batch-size 512 \
     --hidden-dim 512 \
     --encoding-dim 16 \
@@ -238,7 +246,8 @@ To run Thompson sampling baseling, use `thompson-sampling-baseline` flag:
 ```
 
 If you want to learn a batch of $D$, e.g. `D=60` experiments modify `design_dim` accordingly. e.g:
-```python
+```
+python
 design_dim: 60
 ```
 
